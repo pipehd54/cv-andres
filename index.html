@@ -156,6 +156,34 @@
          Scripts
     ========================= -->
     <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.menu-btn');
+            
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.menu-btn');
+            
+            navLinks.classList.remove('active');
+            menuBtn.classList.remove('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.menu-btn');
+            
+            if (!e.target.closest('nav')) {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -166,13 +194,16 @@
             });
         });
 
-        // Add scroll effects to nav
+        // Add scroll effects
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const nav = document.querySelector('nav');
-            nav.style.boxShadow = scrolled > 50
-                ? '0 10px 30px -10px rgba(2, 12, 27, 0.7)'
-                : 'none';
+            
+            if (scrolled > 50) {
+                nav.style.boxShadow = '0 10px 30px -10px rgba(2, 12, 27, 0.7)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
         });
     </script>
 </body>
