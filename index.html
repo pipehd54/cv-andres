@@ -1,127 +1,179 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <title>El portafolio de Andres Timote, el crack de cracks </title
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width">
-        <meta name = "robots" content = "index, follow">
-        <meta name = "theme-color" content = "#5debf8">
-        <link rel = "icon" type = "image/png" href = "imagenes/imagen1.jpg"
-        >
-        <meta name="description" content="Portafolio profesional de Andrés Timote, estudiante de desarrollo de software.">
-        <!-- OPEN GRAPH -->
-        <meta property= "og:title" content = "Portafolio de un Desarrolllador de Software">
-        <meta property= "og:image" content = "/imagenes/imagen_prueba_01.jpg">
-        <meta property= "og:image:alt" content = "Una imagen del logo HTML">
-        <!-- DARLE ESTILO A LA PAGINA -->
-    </head>
-    <body>
-    <header>
-        <h1 class="titulo-centrado"> PAGINA WEB DE ANDRES TIMOTE: PORTAFOLIO </h1>
-        <h3> Esta pagina web es un proyecto personal para probar mis conocimientos sobre html, css y javascript! </h3>
-        <nav>
-            <a class = "link" href = "#Experiencia"> Experiencia </a>
-            <a class = "link" href = "#Lenguajes que he aprendido"> lenguajes </a>
-        </nav>
-    </header>
-    <main>
-<P> Actualmente no tengo experiencia laboral y estoy en busca de practicas laborales para graduarme en el futuro,
-    pero mientras no me quedare de brazos cruzados, asi que estoy dedicando mi tiempo para profundizar mas en mis conocimientos,
-    asi mismo hacer mis propios proyectos para mejorar mis habilidades.
-</P>
-
-<h2 class="titulo-centrado" id = "Experiencia" > Datos sobre mi: </h2>
-<p> Desde hace mucho tiempo me ha interesado la tecnologia, la programacion y el desarrollo de software por lo que he dedicado parte de mi tiempo
-    en aprender sobre estos temas lo maximo posible, tambien por eso mismo decidi estudiar una carrera relacionada con todo el tema del desarrollo 
-    y la programacion.
-</p>
-<ul>
-    <li>Ninguna experiencia laboral hasta la fecha..</li>
-    <li>Estudiante en proceso de Desarrollo de Software.</li>
-    <li>Alguien apasionado por la tecnologia y el desarrollo de software.</li>
-</ul>
-
-<img
-    id = "photo-image"
-    width = 250
-    height = 350
-    title = "Una imagen de mi persona" 
-    src = "imagenes/imagen2.jpg" 
-    alt = "Una imagen de mi persona"
->
-<h2 class="titulo-centrado" id = "Lenguajes que he aprendido"> Lenguajes que he aprendido </h2>
-    <aside>
-        <header>
-            <p> Los lenguajes que muestro a continuacion son los que he visto durante mi recorrido como estudiante de desarrollo de software
-                por parte de mi universidad, y por otra parte tambien estan los que he aprendido por mi cuenta como autodidacta.
-            </p>
-        </header>
-        <ul class = "lenguajes">
-            <li><i class="fa-solid fa-c" title = "C++"></i></li>
-            <li><i class="fa-brands fa-python" title = "Python"></i></li>
-            <li><i class="fa-solid fa-database" title = "SQL"></i></li>
-            <li><i class="fa-brands fa-html5" title = "HTML"></i></li>
-            <li><i class="fa-brands fa-css3-alt" title = "CSS"></i></li>
-            <li><i class="fa-brands fa-js" title = "Javascript"></i></li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio web, desarrollador de software.</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5debf8">
+    <meta name="description" content="Portafolio profesional de Andrés Timote, estudiante de desarrollo de software.">
+    <meta property="og:title" content="Portafolio de un Desarrolllador de Software">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Una imagen del logo HTML">
+    <link rel="icon" type="image/png" href="imagenes/imagen2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- =========================
+         Navegación
+    ========================= -->
+    <nav>
+        <div class="logo">AT</div>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-    </aside>
-    <section>
-        <article>
-            <header>
-                <h4> Sitio web personal</h4>
-            </header>
-            <p> Esta es una pagina web creada en base mis conocimientos como una forma de demostrar
-            la experiencia que obtuve mientras estuve aprendiendo por mi cuenta todo el tema de
-            desarrollo web. </p>
-            <footer> Tecnologias utilizadas: HTML, CSS, JAVASCRIPT </footer>
-        </article>
-        <section>
-            <h2 class="titulo-centrado"> Preguntas frecuentes: </h2>
-            <details>
-                <summary> ¿Donde estas estudiando actualmente? </summary>
-                <p> Actualmente me encuentro estudiando en UNICUCES. </p>
-            </details>
-            <details>
-                <summary> ¿Que lenguajes de programacion has visto? </summary>
-                <p> Actualmente he visto C++, Python, Html, CSS y Javascript. </p>
-            </details>
-            <details>
-                <summary> ¿Has tenido experiencia laboral previa? </summary>
-                <p> No, pero mientras logro conseguir trabajo estare haciendo
-                    proyectos personales para mejorar mis habilidades. </p>
-            </details>
+    </nav>
+
+    <!-- =========================
+         Redes Sociales
+    ========================= -->
+    <div class="social-links">
+        <a href="https://github.com/pipehd54" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/andr%C3%A9s-felipe-timote-daza-70052522b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/4ndres._co/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- =========================
+         Email Fijo
+    ========================= -->
+    <div class="email-link">
+        <a href="mailto:pipetimoty@gmail.com">pipetimoty@gmailcom</a>
+    </div>
+
+    <div class="container">
+        <!-- =========================
+             Hero Section
+        ========================= -->
+        <section class="hero">
+            <p class="hero-intro">Hola, mi nombre es</p>
+            <h1 class="hero-name">Andrés Timote.</h1>
+            <h2 class="hero-subtitle">Construyo experiencias digitales.</h2>
+            <p class="hero-description">
+                Soy un desarrollador de Software en formacion donde actualmente me encuentro estudiando en la Corporacion Universitaria 
+                Centro Superior Unicuces.
+            </p>
+            <a href="#proyectos" class="cta-button">¡Mira mi trabajo!</a>
         </section>
-    </section>
-        <section>
-            <h2 class="titulo-centrado"> Formulario de contacto </h2>
-            <form method = "post" action = "/">
-                <fieldset>
-                    <legend> Informacion de contacto </legend>
-                    <div>
-                    <label> Nombre: </label>
-                    <input type = "text" id = "name" required>
+
+        <!-- =========================
+             Sobre mí
+        ========================= -->
+        <section id="sobre">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        ¡Hola! Mi nombre es Andrés y vivo en Cali, Colombia. Disfruto creando paginas web
+                        pero tambien tengo interes en otros enfoques. Mi interés en el desarrollo web comenzó cuando decidí intentar personalizar 
+                        mi primera página web, lo que me llevó a descubrir el mundo del HTML y CSS.
+                    </p>
+                    <p>
+                        Avanzando rápidamente hasta hoy, he tenido el privilegio de trabajar en 
+                        varios proyectos personales que me han permitido crecer como desarrollador. 
+                        Mi enfoque principal estos días está en mejorar mi lógica de programación 
+                        y aprender nuevas tecnologías.
+                    </p>
+                    <p>
+                        Aquí tienes algunas tecnologías con las que he estado trabajando recientemente:
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">JavaScript (ES6+)</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">HTML & CSS</div>
+                        <div class="skill-item">Django (aun en proceso)</div>
+                        <div class="skill-item">SQL (aun en proceso)</div>
+                        <div class="skill-item">Git & GitHub</div>
                     </div>
-                    <label> Correo: </label>
-                    <input type = "email" id = "email" required>
-                    <div>
-                    <label> Numero: </label>
-                    <input type = "tel" id = "phone" required>
+                </div>
+                <div class="about-image">
+                    <div style="width: 100%; height: 300px; background-color: var(--hover); border-radius: 5px; display: flex; align-items: center; justify-content: center; color: var(--subtext);">
+                        <img src="imagenes/imagen2.jpg">
                     </div>
-                    <button type = "submit"> Enviar </button>
-                </fieldset>
-            </form>
+                </div>
+            </div>
         </section>
-    </main>
+
+        <!-- =========================
+             Proyectos
+        ========================= -->
+        <section id="proyectos">
+            <h2 class="section-title">Algunas cosas que he construido</h2>
+            
+            <div class="project-item">
+                <div class="project-content">
+                    <p class="project-overline">Proyecto Destacado</p>
+                    <h3 class="project-title">Portafolio Personal</h3>
+                    <div class="project-description">
+                        Un portafolio web limpio y moderno construido con HTML y CSS puro. 
+                        Presenta un diseño responsive y una experiencia de usuario intuitiva 
+                        para mostrar mis proyectos y habilidades como desarrollador.
+                    </div>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div style="width: 100%; height: 300px; background-color: var(--hover); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--subtext);">
+                        <img src="imagenes/imagen3.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             Contacto
+        ========================= -->
+        <section id="contacto" class="contact">
+            <p class="contact-overline">¿Qué sigue?</p>
+            <h2 class="contact-title">Ponte en contacto</h2>
+            <p class="contact-description">
+                Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre 
+                está abierta. Ya sea que tengas una pregunta o solo quieras saludar, 
+                ¡haré todo lo posible por responderte!
+            </p>
+            <a href="mailto:pipetimoty@gmail.com class="cta-button">¡Salúdame!</a>
+        </section>
+    </div>
+
+    <!-- =========================
+         Footer
+    ========================= -->
     <footer>
-        Copyright 2025 - Seox Company
-        <a href = "mailto: pipetimoty@gmail.com"> Enviame un correo </a>
-        <a href = "tel: +573194971221"> Llamame </a>
-        <a href = "whatsapp://send?text=Hola Andres"> Escribeme </a>
-        <a href = "https://github.com/pipehd54" target = "_blank" rel = "noopener noreferrer"> Github </a>
-        <a href = "https://www.linkedin.com/in/andr%C3%A9s-felipe-timote-daza-70052522b/" target = "_blank" rel = "noopener noreferrer"> Linkedin </a>
+        <p>Diseñado y construido por Andrés Timote</p>
     </footer>
-    </body>
+
+    <!-- =========================
+         Scripts
+    ========================= -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effects to nav
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const nav = document.querySelector('nav');
+            nav.style.boxShadow = scrolled > 50
+                ? '0 10px 30px -10px rgba(2, 12, 27, 0.7)'
+                : 'none';
+        });
+    </script>
+</body>
 </html>
